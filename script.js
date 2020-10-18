@@ -1,4 +1,3 @@
-let jeniskelamin = ['male', 'female']
 class Student {
     constructor(name, age, dateOfBirth, gender, studentID, hobbies) {
         this.name = name;
