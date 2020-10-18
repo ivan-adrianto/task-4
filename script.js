@@ -1,4 +1,3 @@
-let jeniskelamin = ['male', 'female']
 class Student {
     constructor(name, age, dateOfBirth, gender, studentID, hobbies) {
         this.name = name;
@@ -6,12 +5,12 @@ class Student {
         this.dateOfBirth = dateOfBirth;
         this.studentID = studentID;
         this.hobbies = hobbies;
-        if (gender == 'male') {
+        if (gender.toLowerCase() == 'male') {
             return this.gender = 'male'
-        } else if (gender == 'female') {
+        } else if (gender.toLowerCase() == 'female') {
             return this.gender = 'female'
         } else {
-            return this.gender = 'invalid gender'
+            return this.gender = 'invalid gender input'
         }
       
     }
@@ -29,11 +28,11 @@ class Student {
     }
 
     set setGender(genderBaru) {
-        if (genderBaru == 'male') {
-            return this.gender = genderBaru
-        } else if (genderBaru == 'female') {
-            return this.gender = genderBaru;
-        } else { this.gender='invalid gender' }
+        if (genderBaru.toLowerCase() == 'male') {
+            return this.gender = 'male'
+        } else if (genderBaru.toLowerCase() == 'female') {
+            return this.gender = 'female';
+        } else { this.gender='invalid gender input' }
     }
 
     addHobby(hobiBaru) {
